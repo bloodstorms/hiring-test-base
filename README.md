@@ -1,2 +1,2 @@
 # hiring-test-environment
-A simple environment to begin the test
+A simple environment to begin hiring test
