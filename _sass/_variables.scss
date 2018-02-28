@@ -1,0 +1,20 @@
+$base-font-size:                              14px;
+$base-color:                                  #404040;
+$base-bg-anthracite:                          #2a2a2a;
+$base-bg-blue:                                #60919f;
+$base-bg-grey:                                #e8e8e8;
+$base-bg-green:                               #a0d1c5;
+$base-bg-toucan:                              #99bdb6;
+$base-yellow:                                 #f3c600;
+
+$screen-phone-max:                            768px;
+$screen-tablet-min:                           $screen-phone-max;
+$screen-tablet-max:                           992px;
+$screen-tablet-landscape-min:                 768px;
+$screen-tablet-landscape-max:                 1024px;
+$screen-desktop-min:                          $screen-tablet-max;
+$screen-desktop-max:                          1200px;
+$screen-medium-desktop-min:                   1400px;
+$screen-large-desktop-min:                    $screen-desktop-max+1;
+$screen-x-large-desktop-min:                  1600px;
+$screen-xx-large-desktop-min:                 1900px;

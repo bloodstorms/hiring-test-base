@@ -1,0 +1,54 @@
+# Site settings
+title: Toucan Toco
+email: contact@toucantoco.com
+description: "Visualisez simplement vos données en entreprise grâce à notre solution de data storytelling. Prenez des décisions informées à travers notre application, disponible sur mobile, tablettes et pc"
+baseurl: ""
+url: "https://toucantoco.com"
+twitter_username: "Toucan_Toco"
+github_username: ToucanToco
+logo: /img/toucantoco_logo.png
+
+
+twitter:
+  #description: "Toucan Toco, édite des logiciels de dataviz. Nos solutions de reporting permettent de visualiser les données facilement et rapidement sur mobile, Ipad et PC."
+  username: "Toucan_Toco"
+  # url: "https://toucantoco.com/"
+  #logo: '<a href="http://imgur.com/elwuoTJ"><img src="http://i.imgur.com/elwuoTJ.jpg" title="source: imgur.com" /></a>'
+
+facebook:
+  publisher: "https://www.facebook.com/toucantocodata"
+  #admins: 693537714029597
+  #logo: '<a href="http://imgur.com/elwuoTJ"><img src="http://i.imgur.com/elwuoTJ.jpg" title="source: imgur.com" /></a>']
+
+social:
+  name: "Toucan Toco"
+  links:
+    - "https://www.facebook.com/toucantocodata"
+    - "https://twitter.com/Toucan_Toco"
+    - "https://plus.google.com/113134487476933992090/about"
+    - "https://www.linkedin.com/company/toucan-toco"
+    - "https://fr.slideshare.net/ToucanToco"
+    - "https://www.instagram.com/toucantoco"
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/toucantoco_logo.png
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-autoprefixer
+
+exclude:
+  - vendor
+  - README.md
+  - circle.yml
+  - CONTRIBUTING.md
+  - Dockerfile
