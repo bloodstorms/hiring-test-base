@@ -8,6 +8,15 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include roboto(normal);
+  font-size: 16px;
+}
+
 a,
 a:active,
 a:hover,
@@ -15,4 +24,94 @@ a:link
 a:visited {
   color: $base-color;
   text-decoration: none;
+}
+
+img  {
+  max-width: 100%;
+}
+
+
+/* Header */
+.header {
+  background: #fff;
+}
+.sub-header {
+  background: url(../img/background-partners.png) no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  height: 400px;
+  &__title {
+    @include roboto(bold);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* block description */
+.block-description {
+  margin: 40px auto;
+  max-width: 400px;
+  text-align: center;
+  &__txt {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  &__action {
+
+  }
+  &__action-btn {
+    background: $base-yellow;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+/* Block partners */
+.partners {
+  margin: 0 auto;
+  max-width: 1024px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+  &__item {
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+    max-width: 30%;
+    flex: 0 0 30%;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    @media screen and (max-width: 1024px) {
+      height: 150px;
+      line-height: 150px;
+    }
+    @media screen and (max-width: 767px) {
+      height: auto;
+      line-height: 100%;
+      display: block;
+      max-width: 100%;
+      padding: 20px 0;
+    }
+    img {
+      max-width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 }
